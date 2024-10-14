@@ -1,0 +1,96 @@
+body{
+    background-image: url(foodback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#spoon{
+    float: left;
+}
+#label{
+    color: orange;
+    font-size: 2.5em;
+    font-style: oblique;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.navbar li{
+    float: left;
+}
+.middlecontent{
+    color: white;
+    font-style: oblique;
+    float: left;
+}
+.navbar{
+    position: relative;
+    top: -60px;
+}
+#pizzadisc{
+    margin-left: 350px;
+    margin-top: 12px;
+}
+button{
+    background-color: orange;
+    width: 150px;
+    height: 40px ;
+    color: white;
+    border: none;
+}
+.middlecontent{
+    padding-left: 55px;
+}
+a:hover{
+    color: orange;
+}
+button:hover{
+    background-color: orangered;
+}
+#pizzadisc{
+    animation: rotate 20s infinite linear;
+}
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@media screen and (max-width: 600px){
+    #spoon{
+        float: left;
+        height: 40px;
+        width: 40px;
+    }
+    #label{
+        font-size: larger;
+    }
+    .navbar{
+        position: relative;
+        top: 5px;
+    }
+    
+    #pizzadisc{
+        float: right;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        bottom: 240px;
+        right: 30px;
+    }
+    .middlecontent{
+        position: relative;
+        top: 140px;
+        right: 20px;
+    }
+    a{
+        font-size: smaller;
+    }
+
+}

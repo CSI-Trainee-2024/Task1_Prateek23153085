@@ -1,0 +1,202 @@
+body{
+    background-color: white;
+}
+.navbar ul{  
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align :center;
+}
+.navbar li{
+    float: left;
+    position: relative;
+    left: 800px;
+}
+#label{
+    float: left;
+    color: orange;
+    position: relative; 
+    bottom: 60px;
+    left: 20px;
+    font-style: oblique;
+}
+#spoonfork{
+    float: left; position: relative; bottom: 50px; left: 20px;
+}
+#dine{
+    float: left;
+    position: relative;
+    right: 187px;
+}
+.container{
+    display: flex;
+    position: relative;
+    top: 130px;
+    right: 70px;
+    background-color: rgb(15, 24, 41);;
+}
+.box{
+    text-align: center;
+    color: orange;
+    background-color: aqua;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 9px;
+}
+button:hover{
+    background-color: orangered;
+}
+table{
+    height: 550px;
+    width: 550px;
+    position: relative;
+    right: 110px;
+}
+a:hover{
+ color: orange;
+}
+#btna{
+    color: white;
+}
+.box:hover{
+    transform: scale(1.1,1.1);
+    background-color: aquamarine;
+}
+#box1{
+    animation: slideright 1s; 
+}
+#box2{
+    animation: slidetop 1s; 
+}
+#box3{
+    animation: slidedown 1s; 
+}
+#box4{
+    animation: slideleft 1s;
+}
+table{
+    opacity: 0;
+    animation: fade 1s ;
+    opacity: 1;
+}
+@keyframes fade {
+    100%{opacity: 0}
+}
+@keyframes slideright {
+    from{transform: translateX(-200%);}
+}
+@keyframes slideleft {
+    from{transform: translateX(200%);}
+}
+@keyframes slidetop {
+    from{transform: translateY(-200%);}
+}
+@keyframes slidedown {
+    from{transform: translateY(200%);}
+}
+@media screen and (max-width: 600px){
+    #spoonfork{
+        float: left;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        top: 25px;
+        right: 20px;
+        
+    }
+    #label{
+        font-size: 20px;
+        position: relative;
+        top: 14px;
+    
+    }
+    .navbar{
+        position: relative;
+        top: 5px;
+    }
+    a{
+        font-size: smaller;
+        position: relative;
+        right: 770px;
+        
+    }
+    #textabout{
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+    }
+
+    #pic1{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        bottom: 700px;
+        left: 80px;
+    }
+    #pic2{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        bottom: 600px;
+        left: 80px;
+    }
+    #pic3{
+        height: 1px;
+        width: 1px;
+        visibility: hidden;
+    }
+    #pic4{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        bottom: 600px;
+        left: 80px;
+    }
+    #hexp{
+        visibility: hidden;
+    }
+    #hexpr{
+        visibility: hidden;
+    }
+    th{
+        position: relative;
+        left: 25px
+    }
+    tr{
+        position: relative;
+        bottom: 15px;
+    }
+    #menuback{
+        background-image: url(menubg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #dine{
+        height: 1px;
+        width: 1px;
+    }
+    #resform{
+        position: relative;
+        left: 70px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        font-size: smaller;
+        width: 350px;
+        height: 180px;
+    }
+}
